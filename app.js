@@ -11,11 +11,15 @@ let selectedPasswordType = '';
 let passLen = 0;
 
 buttonSimple.addEventListener('click', () =>{
+    buttonSimple.classList.toggle('clicked');
+    buttonComplicated.classList.remove('clicked');
     selectedPasswordType = 'simple';
     checkPasswordField();
 });
 
 buttonComplicated.addEventListener('click', () => {
+    buttonComplicated.classList.toggle('clicked');
+    buttonSimple.classList.remove('clicked');
     selectedPasswordType = 'complicated';
     checkPasswordField();
 });
