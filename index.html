@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Password Generator by Rusev</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Password Generator by <span>Rusev</span></h1>
+
+        <input type="number" min="8" id="passLength" placeholder="Length of your password" class="input">
+
+        <div class="btn-container">
+            <button class="btn" id="simple">Simple</button>
+            <button class="btn" id="complicated">Complicated</button>
+        </div>
+
+        <p id="info">Chosen watataw with 8 symbols</p>
+
+        <button class="btn-generate" id="generate">Generate!</button>
+
+        <div class="password-container">
+            <input type="text" id="generatedPass" class="passwordGen">
+            <button class="copy-btn" id="copy">Copy</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

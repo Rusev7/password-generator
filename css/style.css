@@ -1,0 +1,156 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #7d4aba;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    height: 80vh;
+    padding: 2.5rem;
+    background-color: #f5dbff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {  
+    font-size: 4rem;
+    text-align: center;
+    color: #512761;
+}
+
+span {
+    color: #b50264;
+}
+
+.input {
+    margin-top: 10rem;
+    padding: 1.5rem 3rem;
+    font-size: 1.7rem;
+}
+
+.input:focus {
+    outline: 1px solid #512761;
+}
+
+/* *********** BUTTON STYLING *********** */
+
+.btn-container {
+    margin-top: 5rem;
+}
+
+.btn {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 2.5rem 5rem;
+    border: 1px solid #ccc;
+    outline: none;
+    box-shadow: 10px 10px 7px rgba(0,0,0, 0.5);
+    transition: .2s ease-in;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #512761;
+    color: #ddd;
+    border: none;
+}
+
+.btn:active {
+    transform: translateY(5px);
+    box-shadow: 7px 7px 4px rgba(0,0,0, 0.5);
+}
+
+.clicked {
+    transform: translateY(5px);
+    background-color: #512761;
+    color: #ddd;
+    border: none;
+}
+
+/* ********** PARAGRAPH WITH INFO STYLING *********** */
+#info {
+    margin-top: 5rem;
+    font-size: 1.8rem;
+    font-family: monospace;
+    font-weight: 400;
+    display: none;
+}
+
+.bold {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+/* ********** GENERATE BUTTON *********** */
+.btn-generate {
+    margin-top: 3rem;
+    padding: 2.5rem 5rem;
+    width: 30rem;
+    background-color: #512761;
+    border: none;
+    outline: none;
+    color: #ddd;
+    font-size: 2rem;
+    font-weight: 700;
+    box-shadow: 10px 10px 7px rgba(0,0,0, 0.5);
+    transition: .2s ease-in;
+}
+
+.btn-generate:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.btn-generate:active {
+    transform: scale(.9);
+}
+
+/* ********** GENERATED PASSWORD CONTAINER *********** */
+.password-container {
+    margin-top: 5rem;
+    /* display: none; */
+}
+
+.passwordGen {
+    padding: 1rem 2.5rem;
+    min-width: 30rem;
+}
+
+.passwordGen:focus {
+    outline: 1px solid #512761;
+}
+
+.copy-btn {
+    padding: 1rem 2.5rem;
+    outline: none;
+    border: none;
+    transition: .2s ease;
+    background-color: #512761;
+    color: #ddd;
+}
+
+.copy-btn:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #512761;
+}
+
+.copy-btn:active {
+    transform: translateY(2px);
+}
