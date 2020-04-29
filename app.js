@@ -63,12 +63,14 @@ function generate() {
     passLen = passwordLength.value;
     if (selectedPasswordType == 'simple') {
         if(passLen >= 2 && passLen <= 20) {
+            displayChosenOption(selectedPasswordType);
             generateSimple(passLen);
         } else {
             displayLenErr();
         } 
     } else {
         if(passLen >= 8 && passLen <= 300) {
+            displayChosenOption(selectedPasswordType);
             generateComplicated(passLen);
         } else {
             displayErr();
