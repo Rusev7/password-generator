@@ -60,6 +60,7 @@ function displayLenErr() {
 
 
 function generate() {
+    passLen = passwordLength.value;
     if (selectedPasswordType == 'simple') {
         if(passLen >= 2 && passLen <= 20) {
             generateSimple(passLen);
