@@ -10,6 +10,18 @@ html {
     font-size: 62.5%;
 }
 
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 50%;
+    }   
+}
+
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 45%;
+    }   
+}
+
 body {
     background-color: #7d4aba;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -20,7 +32,7 @@ body {
 
 .container {
     width: 80%;
-    height: 80vh;
+    min-height: 80vh;
     padding: 2.5rem;
     background-color: #f5dbff;
     display: flex;
@@ -52,6 +64,7 @@ span {
 
 .btn-container {
     margin-top: 5rem;
+    display: flex;
 }
 
 .btn {
@@ -62,6 +75,12 @@ span {
     outline: none;
     box-shadow: 10px 10px 7px rgba(0,0,0, 0.5);
     transition: .2s ease-in;
+}
+
+@media screen and (max-width: 600px) {
+    .btn {
+        padding: 1.5rem 3rem;
+    }
 }
 
 .btn:hover {
@@ -112,6 +131,13 @@ span {
     transition: .2s ease-in;
 }
 
+@media screen and (max-width: 600px) {
+    .btn-generate {
+        padding: 2rem 3rem;
+        width: 20rem;
+    }
+}
+
 .btn-generate:hover {
     cursor: pointer;
     transform: scale(1.05);
@@ -130,6 +156,12 @@ span {
 .passwordGen {
     padding: 1rem 2.5rem;
     min-width: 30rem;
+}
+
+@media screen and (max-width: 600px) {
+    .passwordGen {
+        min-width: 20rem;
+    }   
 }
 
 .passwordGen:focus {
